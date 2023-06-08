@@ -11,9 +11,14 @@ Kernel: 6.2.x or higher
 
 ## How to build
 
+On Arch Linux:
+```
+sudo pacman -S gcc kmod linux-headers
+```
+
+Then:
 ```
 make
-
 ```
 
 ## How to use
