@@ -18,7 +18,11 @@ sudo pacman -S gcc kmod linux-headers
 
 Then:
 ```
+# if you have automatic fan speed control (2) or no fan speed control (0).
+echo "1" > /sys/class/hwmon/hwmon1/pwm1_enable
+
 make
+sudo insmod xnFan.ko
 ```
 
 ## Tests
